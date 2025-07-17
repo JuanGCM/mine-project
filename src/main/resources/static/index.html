@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Spring Boot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio de Formularios HTML</title>
+<link rel="stylesheet" href="../estilos/festilos.css">
 </head>
 <body>
-    <h1>¡Bienvenido a mi página web!</h1>
-    <p>Esta es una página servida desde un proyecto Spring Boot.</p>
+	<h1>Mi Formulario de Ejercicio</h1>
+	<form action="#" method="post">
+		<fieldset>
+		<legend>Datos Personales:</legend>
+		<label>Nombre:</label>
+		<input type="text" name="nombre" placeholder="Juan">
+		<label>Apellidos:</label>
+		<input type="text" name="apellidos" placeholder="Chavez">
+		<label>Género:</label>
+		<select>		
+		<option selected="selected">Hombre</option>
+		<option>Mujer</option>
+		<option>Otro</option>
+		</select>
+		</fieldset>
+		<fieldset>
+		<legend>Datos de Acceso:</legend>
+		<label>Email:</label>
+		<input type="email" name="correo_acceso" placeholder="example@gmail.com">
+		<label>Contraseña:</label>
+		<input type="password" id="passUsuario" name="clave_acceso">
+		</fieldset>
+		<fieldset>
+		<legend>Opinión:</legend>
+		<label>Mi Experiencia:</label>
+		<textarea rows="10" cols="20"></textarea>
+		<label>Calificación:</label>
+		<select>		
+		<option selected="selected">Excelente</option>
+		<option>Bueno</option>
+		<option>Malo</option>
+		<option>Pésimo</option>
+		</select>
+		<label>Observaciones:</label>
+		<textarea rows="10" cols="20" placeholder="Yo creo que..."></textarea>
+		</fieldset>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpiar">		
+    </form>
 </body>
 </html>
